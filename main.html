@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zayavka</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-[linear-gradient(94.31deg,rgba(212,20,90,0.25)_0.96%,rgba(46,49,146,0.25)_104.83%)] font-[Roboto]">
+    <main class="flex min-h-screen items-center justify-center px-4 py-10">
+        <section class="w-full max-w-[750px] rounded-[15px] bg-white p-6 shadow-[0px_0px_35px_0px_rgba(212,20,90,0.25)] sm:p-10" aria-labelledby="form-title">
+            <h1 id="form-title" class="mb-8 text-center text-[24px] font-medium text-black">ФОРМА ЗАЯВКИ</h1>
+            <form class="flex flex-col gap-5">
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <label class="sr-only" for="name">Ваше имя</label>
+                    <input id="name" name="name" autocomplete="name" class="h-[51px] min-w-0 rounded-[9px] border border-[rgba(161,161,161,1)] px-3" placeholder="Ваше имя" type="text" required>
+                    <label class="sr-only" for="email">Ваш e-mail</label>
+                    <input id="email" name="email" autocomplete="email" class="h-[51px] min-w-0 rounded-[9px] border border-[rgba(161,161,161,1)] px-3" placeholder="Ваш e-mail" type="email" required>
+                </div>
+                <label class="sr-only" for="message">Сообщение</label>
+                <textarea id="message" name="message" class="min-h-[120px] resize-y rounded-[9px] border border-[rgba(161,161,161,1)] p-3" placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)" required></textarea>
+                <button class="mx-auto flex h-[53px] w-[179px] items-center justify-center rounded-[7px] bg-[linear-gradient(95.2deg,#b90160_2.23%,#2e3192_99.51%)] text-[20px] text-white" type="submit">ЗАКАЗАТЬ</button>
+                <a class="text-center text-[14px] text-[rgba(81,79,79,1)] underline" href="./index.html">Вернуться на главную</a>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

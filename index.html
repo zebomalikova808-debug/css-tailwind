@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glavnoe</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex flex-wrap items-center justify-between gap-5 px-6 py-4 md:px-[50px]">
+        <a href="index.html" aria-label="На главную">
+            <img src="./images/icon.png" alt="Логотип EVA-ковриков">
+        </a>
+        <nav aria-label="Основная навигация">
+            <ul class="flex flex-wrap gap-6">
+                <li><a class="font-[Roboto] text-[18px] text-[hsla(0,0%,45%,1)]" href="#reviews">отзывы</a></li>
+                <li><a class="font-[Roboto] text-[18px] text-[hsla(0,0%,45%,1)]" href="#what-is">что это?</a></li>
+                <li><a class="font-[Roboto] text-[18px] text-[hsla(0,0%,45%,1)]" href="#contacts">контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6 py-12 md:flex-row md:gap-16 md:py-20">
+            <div class="flex w-full flex-col items-start gap-8 md:w-1/2">
+                <h1 class="font-[Roboto] text-[clamp(2rem,5vw,50px)] font-black leading-tight text-black">Инновационные коврики для автомобиля</h1>
+                <a class="flex h-[53px] w-[179px] items-center justify-center rounded-[7px] bg-[linear-gradient(95.2deg,#b90160_2.23%,#2e3192_99.51%)] text-[20px] text-white" href="./main.html">ЗАКАЗАТЬ</a>
+            </div>
+            <div class="w-full md:w-1/2"><img class="h-auto w-full" src="./images/cover.png" alt="Автомобильный коврик EVA"></div>
+        </section>
+
+
+        <section id="what-is" class="mx-auto max-w-7xl px-6 py-12">
+            <h2 class="mb-10 text-center font-[Roboto] text-[clamp(2rem,5vw,50px)] leading-tight text-black">Что такое <span class="bg-[linear-gradient(95.2deg,#b90160_2.23%,#2e3192_99.51%)] bg-clip-text text-transparent">EVA</span> коврики?</h2>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+
+                <div class="flex flex-col gap-5 rounded-[10px] bg-white p-5 shadow-[5px_5px_30px_0px_rgba(153,138,138,0.25)]">
+                    <img class="h-52 w-full rounded-[10px] object-cover" src="./images/dishashiy.jpg" alt="Поверхность автомобильного коврика EVA">
+                    <h3 class="font-[Roboto] text-[28px] font-bold">МАТЕРИАЛ</h3>
+                    <p class="font-[Roboto] text-[14px] font-light leading-relaxed text-[rgba(118,118,118,1)]">Коврики EVA всесезонные и отличаются уникальной поверхностью материала с ячейками ромбовидной формы. Из-за чего вода не проливается при изъятии ковра и не плещется при езде. Коврики воду не пропускают.</p>
+                </div>
+
+                <div class="flex flex-col gap-5 rounded-[10px] bg-white p-5 shadow-[5px_5px_30px_0px_rgba(153,138,138,0.25)]">
+                    <img class="h-52 w-full rounded-[10px] object-cover" src="./images/file1.jpg" alt="Особенности крепления коврика EVA">
+                    <h3 class="font-[Roboto] text-[28px] font-bold">ОТЛИЧИЯ</h3>
+                    <p class="font-[Roboto] text-[14px] font-light leading-relaxed text-[rgba(118,118,118,1)]">Резиновые коврики загибаются и лезут на педали. EVA коврики такого не допустят! Специальные липучки держат его в одном положении. При желании, для водителя устанавливается подпятник из рельефного алюминия.</p>
+                </div>
+
+                <div class="flex flex-col gap-5 rounded-[10px] bg-white p-5 shadow-[5px_5px_30px_0px_rgba(153,138,138,0.25)]">
+                    <img class="h-52 w-full rounded-[10px] object-cover" src="./images/haha.jpg" alt="Варианты цветов ковриков EVA">
+                    <h3 class="font-[Roboto] text-[28px] font-bold">РАСЦВЕТКА</h3>
+                    <p class="font-[Roboto] text-[14px] font-light leading-relaxed text-[rgba(118,118,118,1)]">Автомобильные коврики EVA можно заказать и в индивидуальных размерах и в разных цветах, которые комбинируются на выбор покупателя с такими же цветами окантовочной полипропиленовой ременной ленты.</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="reviews" class="bg-[linear-gradient(94.31deg,rgba(212,20,90,0.25)_0.96%,rgba(46,49,146,0.25)_104.83%)] px-6 py-16">
+            <div class="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <blockquote class="flex min-h-[187px] items-center justify-center rounded-[9px] bg-white p-8 text-center font-[Roboto] text-[18px] leading-relaxed text-black shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)]">
+                    Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все очень понравилось. Буду советовать только вас.
+                </blockquote>
+                <blockquote class="flex min-h-[187px] items-center justify-center rounded-[9px] bg-white p-8 text-center font-[Roboto] text-[18px] leading-relaxed text-black shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)]">
+                    Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все очень понравилось. Буду советовать только вас.
+                </blockquote>
+                <blockquote class="flex min-h-[187px] items-center justify-center rounded-[9px] bg-white p-8 text-center font-[Roboto] text-[18px] leading-relaxed text-black shadow-[0px_0px_30px_0px_rgba(0,0,0,0.25)]">
+                    Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все очень понравилось. Буду советовать только вас.
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="mx-auto flex max-w-7xl flex-wrap justify-around gap-8 px-6 py-10">
+            <div>
+                <p>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</p><br><img src="./images/instagram.png" alt="Instagram">
+            </div>
+            <div>
+                <p>КОНТАКТНЫЕ ТЕЛЕФОНЫ<br><span class="text-[14px] text-[rgb(81,79,79)]">+375 29 292-29-29 (VEL)<br>+375 33 333-33-33 (МТС)</span></p>
+            </div>
+            <div>
+                <p>О НАС<br><span class="text-[14px] text-[rgb(81,79,79)]">Индивидуальное изготовление EVA ковриков для вашего автомобиля</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
